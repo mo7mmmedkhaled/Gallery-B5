@@ -43,6 +43,7 @@ img {
 
 .tz-gallery .lightbox img:hover {
   transform: scale(1.02);
+  filter: brightness(0.7);
 }
 
 .baguetteBox-button {
@@ -50,7 +51,7 @@ img {
 }
 
 @media (max-width: 767px) {
-  .min-header{
+  .min-header {
     height: 175px;
   }
 
@@ -69,4 +70,3 @@ img {
     opacity: 100%;
   }
 }
-

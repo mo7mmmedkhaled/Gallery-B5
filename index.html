@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gallery Templates</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- Gallery -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="gallery-grid.css" />
+  </head>
+  <body>
+    <div class="container gallery-container">
+      <div class="row">
+        <div class="col-lg-12 text-center min-header">
+          <div class="row justify-content-center">
+            <div class="col-md-3">
+              <button type="button" class="bttn col-md" onclick="myFunction()">
+                Rooms & Suites
+              </button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="bttn col-md" onclick="myFunction2()">
+                Restaurants & Bars
+              </button>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="bttn col-md" onclick="myFunction3()">
+                SPA
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery 1 -->
+      <div class="tz-gallery" style="display: flex" id="demo">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./1.jpg">
+                  <img src="./1.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./1.jpg">
+                  <img src="./1.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./1.jpg">
+                  <img src="./1.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./1.jpg">
+                  <img src="./1.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./1.jpg">
+                  <img src="./1.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./1.jpg">
+                  <img src="./1.jpg" alt="Park" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery 2 -->
+      <div class="tz-gallery" style="display: none" id="demo2">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./2.jpg">
+                  <img src="./2.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./2.jpg">
+                  <img src="./2.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./2.jpg">
+                  <img src="./2.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./2.jpg">
+                  <img src="./2.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./2.jpg">
+                  <img src="./2.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./2.jpg">
+                  <img src="./2.jpg" alt="Park" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery 3 -->
+      <div class="tz-gallery" style="display: none" id="demo3">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./3.jpg">
+                  <img src="./3.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./3.jpg">
+                  <img src="./3.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./3.jpg">
+                  <img src="./3.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./3.jpg">
+                  <img src="./3.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./3.jpg">
+                  <img src="./3.jpg" alt="Park" />
+                </a>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <a class="lightbox" href="./3.jpg">
+                  <img src="./3.jpg" alt="Park" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+      baguetteBox.run('.tz-gallery', {
+        animation: 'fadeIn',
+        buttons: true,
+        noScrollbars: true,
+        overlayBackgroundColor: 'rgba(0,0,0,0.9)',
+      });
+      function myFunction() {
+        document.getElementById('demo').style.display = 'flex';
+        document.getElementById('demo2').style.display = 'none';
+        document.getElementById('demo3').style.display = 'none';
+      }
+      function myFunction2() {
+        document.getElementById('demo').style.display = 'none';
+        document.getElementById('demo2').style.display = 'flex';
+        document.getElementById('demo3').style.display = 'none';
+      }
+      function myFunction3() {
+        document.getElementById('demo').style.display = 'none';
+        document.getElementById('demo2').style.display = 'none';
+        document.getElementById('demo3').style.display = 'flex';
+      }
+    </script>
+  </body>
+</html>
